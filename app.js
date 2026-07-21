@@ -49,7 +49,7 @@
         const dNameClean = dateOfBirth.value.trim();
 
         // Strict validation rule enforcement
-        if (fNameClean === "" || lNameClean === "" || mNameClean === "" || eNameClean === "" || aNameClean === "" || gNameClean === "" || dNameClean === "" ) {
+        if (fNameClean === "" || lNameClean === "" || aNameClean === "" || gNameClean === "" || dNameClean === "" ) {
             validationAlert.classList.remove('d-none');
             validationAlert.textContent = "Validation Failure: FILL OUT THE FORM!";
             return;
@@ -70,9 +70,6 @@
             return;
         }
         
-        
-
-
         // Advance visual stage indicator layout frames
         phase1.classList.add('d-none');
         phase2.classList.remove('d-none');
